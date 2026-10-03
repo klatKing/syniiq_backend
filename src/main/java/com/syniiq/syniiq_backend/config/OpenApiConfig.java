@@ -47,7 +47,7 @@ public class OpenApiConfig {
                                 `data` est l'objet complet pour CREATED et UPDATED, et l'identifiant pour DELETED.
                                 """)
                         .contact(new Contact().name("Syniiq").email("admin@syniiq.com")))
-             .servers(List.of(new Server().url("/").description("Serveur courant")))
+             .servers(List.of(new Server().url("https://syniiq-backend.onrender.com/").description("Serveur courant")))
                                .components(new Components().addSecuritySchemes("bearerAuth",
                         new SecurityScheme()
                                 .type(SecurityScheme.Type.HTTP)
